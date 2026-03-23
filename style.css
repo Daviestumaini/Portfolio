@@ -1,0 +1,78 @@
+/* 1. Import Roboto for that clean, professional look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #4f46e5; /* A modern Indigo */
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+    --bg-white: #ffffff;
+}
+
+/* General resets to make sure it looks consistent across browsers */
+nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 2. Changing the display to make it inline */
+/* We use Flexbox here because it aligns items vertically and horizontally with ease */
+.navbar {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; /* Puts logo on one side, links on the other */
+    padding: 1rem 2rem;
+    background-color: var(--bg-white);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-list {
+    display: flex; /* This makes the <li> elements sit side-by-side */
+    list-style: none;
+    gap: 1.5rem; /* Modern way to add space between inline items */
+}
+
+/* 3. Creative Styling for the links */
+.nav-link {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+/* A creative "underline" effect that appears on hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Adding a 'Call to Action' style to a specific class if you have one */
+.nav-btn {
+    background-color: var(--primary-color);
+    color: white !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn:hover {
+    background-color: #4338ca;
+    transform: translateY(-1px);
+}
