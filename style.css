@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
-    --primary-color: #4f46e5; /* A modern Indigo */
+    --primary-color: #6346e52a; /* A modern Indigo */
     --text-main: #1f2937;
     --text-muted: #6b7280;
     --bg-white: #ffffff1f;
@@ -23,7 +23,7 @@ nav, ul, li, a {
     align-items: center;
     justify-content: space-between; /* Puts logo on one side, links on the other */
     padding: 1rem 2rem;
-    background-color: var(--bg-white);
+    background-color: var(--bg-grey);
     border-bottom: 1px solid #e5e7eb;
 }
 
